@@ -261,7 +261,6 @@ body
 {
     width: 100%;
     margin-top: 6px;
-    border-collapse: collapse;
 }
 .details .recentCustomers
 {
@@ -310,4 +309,68 @@ body
     font-size: 20px;
     font-weight: 700;
     line-height: 1.2em;
+}
+
+/*this is responsive maker section*/
+
+@media (max-width: 992px)
+{
+    .navigation
+    {
+        right: 0px;
+        width: 60px;
+
+    }
+    .navigation.active
+    {
+        right: 0px;
+        width: 300px;
+    }
+    .main
+    {
+        margin-right: 60px;
+        width: calc(100% - 60px);
+        right: 0px;
+    }
+    .main.active
+    {
+        margin-right: 0px;
+        width: calc(100% - 300px);
+        right: 300px;
+    }
+    .cardbox
+    {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .details
+    {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .details .Chart .jschart
+    {
+        width: 550px;
+    }
+
+}
+@media (max-width: 768px)
+{
+    .details
+    {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .details .Chart .jschart
+    {
+        width: 400px;
+    }
+}
+@media (max-width: 480px)
+{
+    .details .Chart
+    {
+        display: none;
+    }
+    .cardbox
+    {
+        grid-template-columns: repeat(1 , 1fr);
+    }
 }
