@@ -214,3 +214,46 @@ body
     font-size: 1.7em;
     color: #0343f4;
 }
+
+.details
+{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 0;
+}
+.details .Chart
+{
+    position: relative;
+    display: grid;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+.details .Chart .Chart-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.details .Chart .Chart-header h2
+{
+    font-weight: 550;
+}
+.details .Chart .Chart-header .btn
+{
+    position: relative;
+    padding: 5px 10px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.details .Chart .jschart
+{
+    width: 100%;
+    margin-top: 6px;
+    border-collapse: collapse;
+}
