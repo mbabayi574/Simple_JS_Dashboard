@@ -1,8 +1,8 @@
 function togglemenu() {
     let toggle = document.querySelector(".toggle");
-    let navigation = document.querySelector('.navigation')
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.main');
     toggle.classList.toggle('active');
     navigation.classList.toggle('active');
-    console.log("hello");
-
+    main.classList.toggle('active');
 }
